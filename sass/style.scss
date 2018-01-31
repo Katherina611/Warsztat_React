@@ -1,0 +1,37 @@
+// Colors
+$rainbow: (
+red: #FF0000,
+yellow: #FFFF00,
+green: #00FF00,
+blue: #0000FF,
+turquoise:#40e0d0
+);
+
+@each $name, $color in $rainbow {
+  .#{$name}{
+    border: 2px solid $color;
+  }
+}
+.app{
+  border: 2px solid yellow;
+  width:300px;
+}
+
+.search{
+  border:2px solid blue;
+};
+input[type='text']{
+  margin-top: 10px;
+  margin-left:10px;
+}
+.table{
+  border:2px solid green;
+  width:300px;
+  padding: 10px;
+}
+.rowSex{
+  border:2px solid turquoise;
+}
+.names {
+  border:2px solid darkred;
+}
